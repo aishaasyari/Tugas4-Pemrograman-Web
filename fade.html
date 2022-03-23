@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Efek Fade</title>
+        <script src="/praktikum4/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#fadeout").click(function() {
+                    $("#kotak").fadeOut("slow");
+                });
+                $("#fadein").click(function() {
+                    $("#kotak").fadeIn("slow");
+                });
+                $("#fadeto").click(function() {
+                    $("#kotak").fadeTo("slow", 0.3);
+                });
+            });
+        </script>
+        <style type="text/css">
+            #kotak {
+                width: 200px;
+                height: 130px;
+                background-color: yellow;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+    <h2>Efek Fade</h2>
+    <div id="kotak"></div>
+    <p> <button id="fadeout">fade out</button>
+        <button id="fadein">fade in</button>
+        <button id="fadeto">fade to 0.3 </button> </p>
+    </body>
+</html>
